@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Leads - HRMS admin template</title>
+        <!-------metaTags----->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="images/favicon.png">
+        <!---------fonts------------->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+        <!----------cssLinks----------->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/index_style.css">
+    </head>
+    <body>
+        <!----------CONTAINER-DIV----------->
+        <div class="container-fulid">
+            <!--------NAVBAR-------->
+            <nav class="navbar navbar-expand-lg navbar-dark nv py-1 px-lg-1">
+                <a class="navbar-brand ml-lg-5 pl-lg-5 " href="#"><img class="mr-lg-5 pr-2" src="images/logo.png">
+                    <span class="ml-lg-5">Focus Technologies</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                        <a class="nav-link link" href="#"><i class="far fa-bell fa-lg"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="#"><i class="far fa-comment fa-lg"></i></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img  class="mr-2"src="images/user.jpg"><span class="admin">Admin</span>
+                            </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="index.html">My Profile</a>
+                            <a class="dropdown-item" href="#">Edit Profile </a>
+                              <a class="dropdown-item" href="#">Settings</a>
+                            <a class="dropdown-item" href="#">Logout</a>
+                          </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-------End0f-NAVBAR------>
+            <!------pageSplitForDashboard----->
+            <section class="home">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-2 px-lg-1 py--1 dashboard">
+                            <ul class="px-0">
+                               <li class="nav-item"><a  class="nav-link" href="dashboard.html">Dashboard</a></li>
+                              <li class="nav-item">
+                                  <i class="fas fa-circle fa-xs float-right pr-2"></i>
+                                  <a  href="#" class="nav-link">Employees</a>
+                             </li>
+                              <li class="nav-item"><a class="nav-link"  href="#">Clients</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#">Tasks</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#">Calls</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#l">Leads</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#">Accounts</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#">Payroll</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#">Timing Sheet</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#">Tickets</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#">Email</a></li>
+                              <li class=" nav-item d-flex justify-content-between align-items-center">
+                                  <a class="nav-link" href="#">Chat</a>
+                                  <span class="badge badge-primary badge-pill">5</span>
+                              </li>
+                              <li class="nav-item"><a class="nav-link" href="#">Assets</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#">Activites</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#">Users</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#">Reports</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-10 con pt-4 pl-4">
+                            <p class="pt-1">My Profile</p>
+                            <form>
+                                <span class="fo">Show</span>
+                                <select name="num">
+                                    <option value="10">10</option>
+                                    <option value="25">25</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select>
+                                <span class="fo">entries</span>
+                            </form>
+                            <!------table------>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12 mt-4">
+                                        <table class="table table-striped">
+                                              <thead>
+                                                <tr>
+                                                  <th scope="col">#</th>
+                                                  <th scope="col">Lead Name</th>
+                                                  <th scope="col">Email</th>
+                                                  <th scope="col">Phone</th>
+                                                  <th scope="col">Projects</th>
+                                                  <th scope="col">Assigned Staff</th>
+                                                  <th scope="col">Status</th>
+                                                  <th scope="col">created</th>
+                                                  <th scope="col">Actions</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr class="color">
+                                                  <th scope="row">1</th>
+                                                  <td><a href="index.html">Wilmer Deluna</a></td>
+                                                  <td>wilmerdeluna@example.com</td>
+                                                  <td>9876543210</td>
+                                                  <td><a href="#">Harvey Clinic</a></td>
+                                                  <td>
+                                                      <img class="t-img img-fluid" src="images/user.jpg">
+                                                      <img class="t-img img-fluid" src="images/user.jpg">
+                                                      <span class="t-num">+15</span>
+                                                 </td>
+                                                  <td><span class="label">Working</span></td>
+                                                  <td>10 hrs ago</td>
+                                                  <td><i class="fas fa-ellipsis-v float-right"></i></td>
+                                                </tr>
+                                                <tr class="bg-white">
+                                                  <th scope="row">2</th>
+                                                  <td><a href="index.html">Lesley Grauer</a></td>
+                                                  <td>lesleygrauer@example.com</td>
+                                                  <td>9876543210</td>
+                                                  <td><a href="#">Penabook</a></td>
+                                                  <td>
+                                                      <img class="t-img img-fluid" src="images/user.jpg">
+                                                      <img class="t-img img-fluid" src="images/user.jpg">
+                                                      <span class="t-num">+15</span>
+                                                 </td>
+                                                  <td><span class="label">Working</span></td>
+                                                  <td>5 Dec 2017</td>
+                                                  <td><i class="fas fa-ellipsis-v float-right"></i></td>
+                                                </tr>
+                                                <tr class="color">
+                                                  <th scope="row">3</th>
+                                                  <td><a href="index.html">Jeffery Lalor</a></td>
+                                                  <td>jefferylalor@example.com</td>
+                                                  <td>9876543210</td>
+                                                  <td><a href="#">Food and Drinks</a></td>
+                                                  <td>
+                                                      <img class="t-img img-fluid" src="images/user.jpg">
+                                                      <img class="t-img img-fluid" src="images/user.jpg">
+                                                      <span class="t-num">+15</span>
+                                                 </td>
+                                                  <td><span class="label">Working</span></td>
+                                                  <td>30 Nov 2017	</td>
+                                                  <td><i class="fas fa-ellipsis-v float-right"></i></td>
+                                                </tr>
+                                                  <tr class="bg-white">
+                                                  <th scope="row">4</th>
+                                                  <td><a href="index.html">Wilmer Deluna</a></td>
+                                                  <td>wilmerdeluna@example.com</td>
+                                                  <td>9876543210</td>
+                                                  <td><a href="#">Harvey Clinic</a></td>
+                                                  <td>
+                                                      <img class="t-img img-fluid" src="images/user.jpg">
+                                                      <img class="t-img img-fluid" src="images/user.jpg">
+                                                      <span class="t-num">+15</span>
+                                                 </td>
+                                                  <td><span class="label">Working</span></td>
+                                                  <td>10 hrs ago</td>
+                                                  <td><i class="fas fa-ellipsis-v float-right"></i></td>
+                                                </tr>
+                                                <tr class="color">
+                                                  <th scope="row">5</th>
+                                                  <td><a href="index.html"><a href="#">Jeffery Lalor</a></a></td>
+                                                  <td>lesleygrauer@example.com</td>
+                                                  <td>9876543210</td>
+                                                  <td><a href="#">Penabook</a></td>
+                                                  <td>
+                                                      <img class="t-img img-fluid" src="images/user.jpg">
+                                                      <img class="t-img img-fluid" src="images/user.jpg">
+                                                      <span class="t-num">+15</span>
+                                                 </td>
+                                                  <td><span class="label">Working</span></td>
+                                                  <td>30 Nov 2017</td>
+                                                  <td><i class="fas fa-ellipsis-v float-right"></i></td>
+                                                </tr>
+                                                <tr class="bg-white">
+                                                  <th scope="row">6</th>
+                                                  <td><a href="index.html">Jeffery Lalor</a></td>
+                                                  <td>jefferylalor@example.com</td>
+                                                  <td>9876543210</td>
+                                                  <td><a href="#">Food and Drinks</a></td>
+                                                  <td>
+                                                      <img class="t-img img-fluid" src="images/user.jpg">
+                                                      <img class="t-img img-fluid" src="images/user.jpg">
+                                                      <span class="t-num">+15</span>
+                                                 </td>
+                                                  <td><span class="label">Working</span></td>
+                                                  <td>30 Nov 2017</td>
+                                                  <td><i class="fas fa-ellipsis-v float-right"></i></td>
+                                                </tr>
+                                                  <tr class="color">
+                                                  <th scope="row">7</th>
+                                                  <td><a  href="index.html">Wilmer Deluna</a></td>
+                                                  <td>wilmerdeluna@example.com</td>
+                                                  <td>9876543210</td>
+                                                  <td><a href="#">Harvey Clinic</a></td>
+                                                  <td>
+                                                      <img class="t-img img-fluid" src="images/user.jpg">
+                                                      <img class="t-img img-fluid" src="images/user.jpg">
+                                                      <span class="t-num">+15</span>
+                                                 </td>
+                                                  <td><span class="label">Working</span></td>
+                                                  <td>10 hrs ago</td>
+                                                  <td><i class="fas fa-ellipsis-v float-right"></i></td>
+                                                </tr>
+                                                  <tr class="bg-white">
+                                                  <th scope="row">8</th>
+                                                  <td><a href="index.html">Lesley Grauer</a></td>
+                                                  <td>lesleygrauer@example.com</td>
+                                                  <td>9876543210</td>
+                                                  <td><a href="#">Penabook</a></td>
+                                                  <td>
+                                                      <img class="t-img img-fluid" src="images/user.jpg">
+                                                      <img class="t-img img-fluid" src="images/user.jpg">
+                                                      <span class="t-num">+15</span>
+                                                 </td>
+                                                  <td><span class="label">Working</span></td>
+                                                  <td>5 Dec 2017</td>
+                                                  <td><i class="fas fa-ellipsis-v float-right"></i></td>
+                                                </tr>
+                                                <tr class="color">
+                                                  <th scope="row">9</th>
+                                                  <td><a href="index.html">Jeffery Lalor</a></td>
+                                                  <td>jefferylalor@example.com</td>
+                                                  <td>9876543210</td>
+                                                  <td><a href="#">Food and Drinks</a></td>
+                                                  <td>
+                                                      <img class="t-img img-fluid" src="images/user.jpg">
+                                                      <img class="t-img img-fluid" src="images/user.jpg">
+                                                      <span class="t-num">+15</span>
+                                                 </td>
+                                                  <td><span class="label">Working</span></td>
+                                                  <td>30 Nov 2017</td>
+                                                   <td><i class="fas fa-ellipsis-v float-right"></i></td>
+                                                </tr>
+                                                <tr class="bg-white">
+                                                  <th scope="row">10</th>
+                                                  <td><a href="index.html">Wilmer Deluna</a></td>
+                                                  <td>	wilmerdeluna@example.com</td>
+                                                  <td>9876543210</td>
+                                                  <td><a href="#">Harvey Clinic</a></td>
+                                                  <td>
+                                                      <img  class="t-img img-fluid "src="images/user.jpg">
+                                                      <img class="t-img img-fluid" src="images/user.jpg">
+                                                      <span class="t-num">+15</span>
+                                                 </td>
+                                                  <td><span class="label">Working</span></td>
+                                                  <td>10 hrs ago</td>
+                                                  <td><i class="fas fa-ellipsis-v float-right"></i></td>
+                                                </tr>
+                                            </table>
+                                        <span class="foter">Showing 1 to 10 of 12 entries</span>
+                                        <nav aria-label="..." class="float-right mt-1">
+                                          <ul class="pagination">
+                                            <li class="page-item disabled">
+                                              <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item active">
+                                              <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                            </li>
+                                            <li class="page-item">
+                                              <a class="page-link" href="#">Next</a>
+                                            </li>
+                                          </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>    
+                </div>
+            </section>
+            
+        </div>
+        <!----------EndOfContainerDiv----------->
+        <!----------jsFiles----------->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

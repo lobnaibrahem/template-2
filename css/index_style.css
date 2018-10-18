@@ -1,0 +1,234 @@
+*{
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+}
+.nv{
+   background: linear-gradient(to right, #667eea 0%, #764ba2 100%);
+}
+.navbar-brand span{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.navbar-brand img{
+    max-width: 40px;
+}
+.nav-item img{
+    width:40px;
+    border-radius: 50%;
+}
+.nav-item a i,.admin{
+    color: #fff;
+}
+.nav-item a {
+    color: #B7B7B7;
+    font-size: 13px;
+    font-weight: 500;
+}
+.nav-item{
+    list-style-type: none;
+}
+.nav-item a:hover{
+    color: #fff;
+}
+.link{
+    padding-top:1.1em;
+}
+.dropdown-menu a{
+    color: #262626;
+    font-size: 13px;
+    font-weight: 400;
+}
+.dropdown-menu a:hover{
+    color: #262626;
+}
+.dashboard{
+    background-color:#34444C ;
+}
+.fa-circle{
+    color: #667EEA;
+    position: relative;
+    top:15px;
+}
+.con{
+    background-color: #EFF3F6;
+}
+.con p{
+    font-size: 20px;
+    font-weight: lighter;
+}
+.bo{
+    border-radius: 20px;
+    background-color: #667EEA;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    float: right;
+}
+.card_1 {
+    background-color: #fff;
+    border: 1px solid #ededed;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+.half_1 {
+ border-right: 2px dashed #ccc;   
+}
+.half_1 img{
+    border-radius: 50%;
+}
+.half_1 h2{
+    font-size: 25px;
+    font-weight: 500;
+}
+.half_1 h3{
+    font-size: 12px;
+    color: #A8A8A8;
+}
+.half_1 p{
+    font-size: 14px;
+    
+}
+.half_1 button{
+    background-color: #667eea;
+    border: 1px solid #667eea;
+    color: #fff;
+    font-size: 14px;
+}
+.half_2 .adress li{
+    color: #515365;
+    list-style-type: none;
+    font-size: 12px;
+}
+.adress li .ad{
+    color: #686A7A;
+    font-weight: 800;
+}
+.skills span{
+    border: 1px solid #ccc;
+    border-radius: 500px;
+    display: block;
+    margin-bottom: 10px;
+    padding: 6px 12px;
+    text-align: center;
+}
+.card_2{
+    background-color: #fff;
+    border: 1px solid #ededed;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+    font-size: 12px;
+}
+.card_t{
+   font-size: 18px;
+    padding: 15px 10px 10px 10px;
+}
+.card_3{
+    background-color: #fff;
+    border: 1px solid #ededed;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+    font-size: 12px;
+}
+.line {
+    width: 1px;
+    margin-left: 4px;
+    height: 50px;
+    background-color: #DDDDDD;
+}
+.line-half{
+    width: 1px;
+    margin-left: 4px;
+    height: 20px;
+    background-color: #DDDDDD;
+}
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color:#DDDDDD;
+    border-radius: 50%;
+}
+.edu .coll{
+    font-size: 13px;
+    font-weight: bold;
+    color: #616161;
+    padding-bottom: 15px;
+}
+.edu .des{
+    color: #9e9e9e;
+    font-size: 13px;
+}
+.fo{
+    color: #626262;
+    font-size: 15px;
+}
+.pagination li{
+    color: #667EEA;
+    font-size: 13px;
+}
+.foter{
+    color: #626262;
+    font-size: 13px;
+}
+.page-link:active{
+    background-color: #667EEA;
+    color: #667EEA;
+}
+table{
+    font-size:13px; 
+}
+thead{
+    background-color: #fff;
+}
+table tr .color{
+    background-color: #E3E7E9;
+}
+.t-img{
+    border: 2px solid #fff;
+    border-radius: 100%;
+    display: inline;
+    height: 38px;
+    overflow: hidden;
+    width: 38px;
+}
+.t-num{
+    border: 2px solid #fff;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: rgb(102, 126, 234);
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    font-weight: 800;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top:-8px;
+}
+tr a:hover{
+    text-decoration: none;
+    
+}
+.label {
+    border: 1px solid #55ce63;
+    color: #55ce63;
+    background-color: #fff;
+    display: inline-block;
+    min-width: 80px;
+    text-align: center;
+}
+/*media query for mobile phones*/
+@media screen and (max-width:500px){
+    .navbar-brand span{
+    display: none;
+    }
+    .dashboard{
+        display: none;
+    }
+    .half_1 {
+    text-align: center;
+    border-right: 0px;
+}
+    .half_2{
+        padding-top: 20px;
+    }
+}
